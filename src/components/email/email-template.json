@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_email_email_templates",
+  "info": {
+    "displayName": "emailTemplate",
+    "icon": "align-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "sender": {
+      "type": "string"
+    },
+    "currentYear": {
+      "type": "string"
+    },
+    "footerCodeData": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "companyName": {
+      "type": "string"
+    }
+  }
+}

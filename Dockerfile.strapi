@@ -1,0 +1,31 @@
+FROM nikolaik/python-nodejs:python3.8-nodejs16-slim
+
+# Install necessary tool
+# User (approot) creattion and workdir setup
+RUN apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com
+RUN apt update && apt install openssh-server vim sudo -y && useradd -rm -d /home/approot -s /bin/bash -g root -G sudo -u 1001 approot && npm install -g npm@8.11.0
+WORKDIR /home/approot
+
+# Setting up app directory
+# Setting up ownership
+# Providing all permissions
+RUN mkdir /home/approot/app && mkdir /home/approot/app/strapi && chown -R approot /home/approot/app && chmod -R 777 /home/approot/app/strapi
+# Setting up user
+USER approot
+
+# Copying strapi app into workspace and running npm install
+# COPY --chown=approot:root ./* ./app/strapi/
+COPY --chown=approot:root config ./app/strapi/config
+# COPY --chown=approot:root public ./app/strapi/public
+COPY --chown=approot:root src ./app/strapi/src
+COPY --chown=approot:root build ./app/strapi/build
+COPY --chown=approot:root public ./app/strapi/public
+COPY --chown=approot:root node_modules ./app/strapi/node_modules
+COPY --chown=approot:root favicon.ico package.json .env ./app/strapi/
+
+COPY start_strapi.py ./app/
+COPY install_strapi.py ./app/
+# RUN python ./app/install_strapi.py
+
+# Setting up entrypoint 
+ENTRYPOINT [ "python", "/home/approot/app/start_strapi.py" ] 

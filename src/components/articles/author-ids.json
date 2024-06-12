@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_articles_author_ids",
+  "info": {
+    "displayName": "Author_Ids",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "author_id": {
+      "type": "string",
+      "required":true
+    }
+  }
+}

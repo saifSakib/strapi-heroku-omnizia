@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dynamic_variables",
+  "info": {
+    "singularName": "dynamic-variable",
+    "pluralName": "dynamic-variables",
+    "displayName": "Themes",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "theme1",
+        "theme2",
+        "theme3"
+      ]
+    },
+    "cardTheme": {
+      "type": "enumeration",
+      "enum": [
+        "card-theme1",
+        "card-theme2",
+        "card-theme3"
+      ]
+    },
+    "WebinarTheme": {
+      "type": "enumeration",
+      "enum": [
+        "webinar-theme1",
+        "webinar-theme2",
+        "webinar-theme3"
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "my_personal_areas",
+  "info": {
+    "singularName": "my-personal-area",
+    "pluralName": "my-personal-areas",
+    "displayName": "My Personal Area",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PageHeadline": {
+      "type": "string"
+    },
+    "InformationAndLinks": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    }
+  }
+}

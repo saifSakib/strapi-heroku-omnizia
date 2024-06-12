@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_layout_component_sliders",
+  "info": {
+    "displayName": "Sliders",
+    "icon": "arrow-alt-circle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "slider": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::slider.slider"
+    },
+    "content_id": {
+      "type": "string"
+    }
+  }
+}

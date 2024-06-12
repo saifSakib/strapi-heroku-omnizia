@@ -1,0 +1,80 @@
+{
+  "collectionName": "components_formfield_fields",
+  "info": {
+    "displayName": "field",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "maxLength": 50
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "text",
+        "email",
+        "date",
+        "checkbox",
+        "image",
+        "tel",
+        "textarea",
+        "select dropdown"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "options": {
+      "type": "json"
+    },
+    "consents": {
+      "type": "component",
+      "repeatable": true,
+      "component": "consents.consents"
+    },
+    "requiredmessage": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "preload": {
+      "type": "boolean"
+    },
+    "isRequired": {
+      "type": "boolean"
+    },
+    "isEditable": {
+      "type": "boolean"
+    },
+    "isPatternValidationEnabled": {
+      "type": "boolean"
+    },
+    "patternValidationMessage": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "pattern": {
+      "type": "string"
+    },
+    "fieldrequirement": {
+      "type": "string",
+      "maxLength": 20
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imgLink": {
+      "type": "string"
+    },
+    "imgLinkDescription": {
+      "type": "richtext"
+    }
+  }
+}

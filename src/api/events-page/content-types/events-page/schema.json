@@ -1,0 +1,88 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events_pages",
+  "info": {
+    "singularName": "events-page",
+    "pluralName": "events-pages",
+    "displayName": "Events Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "title": {
+      "type": "string"
+    },
+    "RUNMODE": {
+      "type": "enumeration",
+      "enum": [
+        "Preview",
+        "Publish"
+      ],
+      "required": true,
+      "default": "Preview"
+    },
+    "EventID": {
+      "displayName": "EventID",
+      "type": "component",
+      "repeatable": true,
+      "component": "events.event-id"
+    },
+    "eventsPageLabel": {
+      "type": "string"
+    },
+    "secondaryEventsPageLabel": {
+      "type": "string"
+    },
+    "inputSearchLabel": {
+      "type": "string"
+    },
+    "eventDetaiPageLabel": {
+      "type": "string"
+    },
+    "showAllWebinarsLabel": {
+      "type": "string"
+    },
+    "speakerLabel": {
+      "type": "string"
+    },
+    "agendaLabel": {
+      "type": "string"
+    },
+    "timeLabel": {
+      "type": "string"
+    },
+    "sessionLabel": {
+      "type": "string"
+    },
+    "downloadLabel": {
+      "type": "string"
+    },
+    "AllWebinarsButtonLabel": {
+      "type": "string"
+    },
+    "DateFilterLabels": {
+      "displayName": "DateFilterLabels",
+      "type": "component",
+      "repeatable": false,
+      "component": "events.date-filter-labels"
+    },
+    "PaginationLabels": {
+      "displayName": "PaginationLabels",
+      "type": "component",
+      "repeatable": false,
+      "component": "events.pagination-labels"
+    },
+    "Sliders": {
+      "displayName": "Sliders",
+      "type": "component",
+      "repeatable": true,
+      "component": "layout-component.sliders"
+    }
+  }
+}

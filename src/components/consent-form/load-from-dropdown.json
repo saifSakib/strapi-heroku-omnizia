@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_consent_form_load_from_dropdowns",
+  "info": {
+    "displayName": "loadFromDropdown",
+    "icon": "air-freshener",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "optionone": {
+      "type": "string"
+    },
+    "optiontwo": {
+      "type": "string"
+    },
+    "defaultoption": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

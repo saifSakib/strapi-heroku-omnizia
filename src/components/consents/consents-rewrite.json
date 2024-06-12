@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_consents_consents_rewrites",
+  "info": {
+    "displayName": "Consents Rewrite",
+    "icon": "anchor"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "consentitem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "consents.consents"
+    }
+  }
+}

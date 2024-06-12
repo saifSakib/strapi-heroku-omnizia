@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_footer_footers",
+  "info": {
+    "displayName": "footer",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "footertext": {
+      "type": "string"
+    },
+    "footerlogo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "footerLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout-component.footer-navbar-links"
+    },
+    "SocialMediaLinkHeader": {
+      "type": "string"
+    },
+    "SocialMediaLink": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout-component.footer-navbar-links"
+    },
+    "copyrightText": {
+      "type": "string"
+    },
+    "veevavaultApprovalCode": {
+      "type": "string"
+    },
+    "popularLinksHeader": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_events_date_filter_labels",
+  "info": {
+    "displayName": "DateFilterLabels"
+  },
+  "options": {},
+  "attributes": {
+    "all": {
+      "type": "string"
+    },
+    "upcoming": {
+      "type": "string"
+    },
+    "past": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_layoutcontent_layoutcontents",
+  "info": {
+    "displayName": "layoutcontent",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "admin::user"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

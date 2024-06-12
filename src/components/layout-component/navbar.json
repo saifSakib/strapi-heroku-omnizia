@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_layout_component_navbars",
+  "info": {
+    "displayName": "navbarLinks",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "navtext": {
+      "type": "string",
+      "maxLength": 30
+    },
+    "navlink": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "authenticated",
+        "public"
+      ]
+    }
+  }
+}

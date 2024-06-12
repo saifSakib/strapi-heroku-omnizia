@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_registration_step_form_components",
+  "info": {
+    "displayName": "FormComponent",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "field":{
+      "type":"component",
+      "repeatable":true,
+      "component": "consent-form.field"
+    },
+    "validUuId": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "invalidUuId": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "existingUuidMessage": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "existingEmailMessage": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "invalidUuidLengthMessage": {
+      "type": "string",
+      "maxLength": 150
+    },
+    "invalidRegionMessage": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "invalidEmailMessage": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "validEmailMessage": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "requestLimitExceededMessage":{
+      "type": "string",
+      "maxLength": 150
+    }
+  }
+}

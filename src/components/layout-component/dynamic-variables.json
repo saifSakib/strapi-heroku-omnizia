@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_layout_component_dynamic_variables",
+  "info": {
+    "displayName": "dynamic_variables",
+    "icon": "paragraph",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "NightMode": {
+      "type": "boolean"
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "Police-Blue/Cerise-Pink",
+        "Violet-Blue/Blue-Jeans",
+        "Raisin-Black/Vivid-Red"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "formpages",
+  "info": {
+    "singularName": "formpage",
+    "pluralName": "formpages",
+    "displayName": "Consent Confirm Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "field": {
+      "type": "component",
+      "repeatable": true,
+      "component": "consent-form.field"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "confirmationmessage": {
+      "type": "string"
+    },
+    "greetingText": {
+      "type": "json"
+    },
+    "formname": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "loadedfrom": {
+      "type": "enumeration",
+      "enum": [
+        "Strapi",
+        "Viquia"
+      ]
+    }
+  }
+}

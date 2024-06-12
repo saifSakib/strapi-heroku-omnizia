@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_articles_recommended_ids",
+  "info": {
+    "displayName": "recommended_id",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "recommended_id": {
+      "type": "string",
+      "required":true
+    }
+  }
+}

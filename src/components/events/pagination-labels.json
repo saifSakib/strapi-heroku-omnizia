@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_events_pagination_labels",
+  "info": {
+    "displayName": "PaginationLabels"
+  },
+  "options": {},
+  "attributes": {
+    "previous": {
+      "type": "string"
+    },
+    "next": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_form_side_component_form_side_componenets",
+  "info": {
+    "displayName": "FormSideComponenet"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "AppointmentIconText": {
+      "type": "string"
+    },
+    "DownloadIconText": {
+      "type": "string"
+    },
+    "EventIconText": {
+      "type": "string"
+    }
+  }
+}

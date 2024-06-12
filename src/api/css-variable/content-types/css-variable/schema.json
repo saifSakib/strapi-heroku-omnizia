@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "css_variables",
+  "info": {
+    "singularName": "css-variable",
+    "pluralName": "css-variables",
+    "displayName": "CSS_VARIABLE"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "css_variables": {
+      "type": "json"
+    }
+  }
+}

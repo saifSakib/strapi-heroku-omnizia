@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Articles",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "article_excerpt": {
+      "type": "richtext",
+      "required": true
+    },
+    "article_description": {
+      "type": "richtext",
+      "required": true
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "articles"
+    },
+    "recommended_ids": {
+      "displayName": "recommended_id",
+      "type": "component",
+      "repeatable": true,
+      "component": "articles.recommended-id"
+    },
+    "home_page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page.page",
+      "inversedBy": "articles"
+    },
+    "gated": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "likes": {
+      "type": "biginteger"
+    },
+    "article_img": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "default_img": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Author_Ids": {
+      "displayName": "Author_Ids",
+      "type": "component",
+      "repeatable": true,
+      "component": "articles.author-ids"
+    },
+    "published_time": {
+      "type": "datetime"
+    }
+  }
+}

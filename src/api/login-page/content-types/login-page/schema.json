@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "login_pages",
+  "info": {
+    "singularName": "login-page",
+    "pluralName": "login-pages",
+    "displayName": "Login Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "formname": {
+      "type": "string"
+    },
+    "field": {
+      "type": "component",
+      "repeatable": true,
+      "component": "consent-form.field"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "modalHeaderText": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "invalidInputMessage": {
+      "type": "string",
+      "maxLength": 150,
+      "required": true
+    },
+    "invalidRequestMessage": {
+      "type": "string",
+      "maxLength": 150
+    },
+    "accountBlockedMessage": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "FormSideComponent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-side-component.form-side-componenet"
+    },
+    "RUNMODE": {
+      "type": "enumeration",
+      "enum": [
+        "Publish",
+        "Preview"
+      ],
+      "default": "Preview",
+      "required": true
+    }
+  }
+}

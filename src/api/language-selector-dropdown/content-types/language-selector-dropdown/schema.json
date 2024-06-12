@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "language_selector_dropdowns",
+  "info": {
+    "singularName": "language-selector-dropdown",
+    "pluralName": "language-selector-dropdowns",
+    "displayName": "Language Selector Dropdown",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "languages": {
+      "type": "json",
+      "pluginOptions": {}
+    }
+  }
+}

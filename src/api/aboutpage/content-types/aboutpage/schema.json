@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about",
+  "info": {
+    "singularName": "aboutpage",
+    "pluralName": "about",
+    "displayName": "About Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "layoutcontent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout-component.layoutcontent"
+    },
+    "bodytext": {
+      "type": "string",
+      "maxLength": 5000
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "RUNMODE": {
+      "type": "enumeration",
+      "enum": [
+        "Publish",
+        "Preview"
+      ],
+      "default": "Preview",
+      "required": true
+    }
+  }
+}

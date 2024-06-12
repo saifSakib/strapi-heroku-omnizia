@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "header_and_footer_layouts",
+  "info": {
+    "singularName": "header-and-footer-layout",
+    "pluralName": "header-and-footer-layouts",
+    "displayName": "Header and Footer Layout",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header.header"
+    },
+    "footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.footer"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "language_selector_dropdown": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language-selector-dropdown.language-selector-dropdown"
+    },
+    "Themes": {
+      "displayName": "dynamic_variables",
+      "type": "component",
+      "repeatable": false,
+      "component": "layout-component.dynamic-variables"
+    },
+    "bannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "emailLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_layout_component_footer_navbar_links",
+  "info": {
+    "displayName": "FooterNavbarLinks",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "navtext": {
+      "type": "string",
+      "maxLength": 30
+    },
+    "navlink": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "authentication",
+        "public"
+      ]
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

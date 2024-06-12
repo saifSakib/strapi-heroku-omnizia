@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_events_event_ids",
+  "info": {
+    "displayName": "EventID",
+    "icon": "book-open",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eventid": {
+      "type": "string"
+    }
+  }
+}

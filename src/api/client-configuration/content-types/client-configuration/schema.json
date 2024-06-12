@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "client_configurations",
+  "info": {
+    "singularName": "client-configuration",
+    "pluralName": "client-configurations",
+    "displayName": "client-configuration",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CSS_VARIABLES": {
+      "type": "json",
+      "required": false
+    }
+  }
+}

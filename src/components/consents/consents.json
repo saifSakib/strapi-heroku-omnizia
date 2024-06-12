@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_consents_consents",
+  "info": {
+    "displayName": "consents",
+    "icon": "adjust",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    },
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "loadcontent": {
+      "type": "enumeration",
+      "enum": [
+        "from viquia",
+        "from strapi"
+      ]
+    },
+    "consenttexts": {
+      "type": "json"
+    },
+    "required": {
+      "type": "string"
+    }
+  }
+}

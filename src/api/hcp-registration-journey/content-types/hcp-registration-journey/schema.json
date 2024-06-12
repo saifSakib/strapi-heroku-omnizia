@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hcp_registration_journeys",
+  "info": {
+    "singularName": "hcp-registration-journey",
+    "pluralName": "hcp-registration-journeys",
+    "displayName": "Hcp Registration Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "confirmationmessage": {
+      "type": "string"
+    },
+    "greetingText": {
+      "type": "json"
+    },
+    "formname": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "loadedfrom": {
+      "type": "enumeration",
+      "enum": [
+        "Strapi",
+        "Viquia"
+      ]
+    },
+    "ScreenOne": {
+      "type": "component",
+      "repeatable": false,
+      "component": "registration-step.form-component"
+    },
+    "consents": {
+      "type": "component",
+      "repeatable": true,
+      "component": "consents.consents"
+    },
+    "ScreenTwo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "registration-step.form-component"
+    },
+    "registrationSuccessMessage": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "registrationErrorMessage": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "otherMessage": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "modalHeaderText": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "FormSideComponent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-side-component.form-side-componenet"
+    },
+    "RUNMODE": {
+      "type": "enumeration",
+      "enum": [
+        "Publish",
+        "Preview"
+      ],
+      "default": "Preview",
+      "required": true
+    }
+  }
+}
